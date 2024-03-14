@@ -1,0 +1,253 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    font-size: .875rem;
+    font-weight: 700;
+    line-height: 1em;
+    font-family: "Roboto", sans-serif;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: .75rem;
+    line-height: 1em;
+    font-weight: 600;
+}
+
+nav a {
+    text-decoration: none;
+    color: #090909;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #202020;
+    margin: 0;
+}
+
+
+footer p:first-of-type {
+    color: #ECECEC;
+    font-size: .75rem;
+    font-weight: 700;
+    line-height: .75rem;
+    margin: 0;
+    padding-top: 2.35rem;
+}
+
+footer p:last-of-type {
+    color: #D7D7D7;
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: 1rem;
+    margin-top: .25rem;
+    margin-bottom: 0;
+    padding-bottom: 2.35rem;
+}
+
+/* INDEX PAGE */
+
+.hero-section {
+    background-image: url("./images/article-image-hero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #FFFFFF;
+    padding: 1.25rem;
+}
+
+.hero-date {
+    margin-top: 0;
+    padding-top: 5rem;
+    font-size: .75rem;
+    line-height: 1em;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.hero-title {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.125em;
+    margin-top: .25em;
+    margin-bottom: 0;
+}
+
+.hero-description {
+    margin-top: .25em;
+    margin-bottom: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1.5rem 1.125rem;
+}
+
+.post img {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.post-date {
+    margin-top: .5rem;
+    color: #000000;
+    font-size: .875rem;
+    line-height: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.post-description {
+    margin: 0;
+}
+
+.more-link {
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.25em;
+    margin-bottom: 2.5em;
+}
+
+@media (min-width: 560px) {
+    .journal-main {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+        padding: 0 1.25rem;
+    }
+    .more-link {
+        grid-column: 1 / 4;
+    }
+    .post {
+        padding: 1.25rem 0 0 0;
+    }
+
+    .home-main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+        padding: 0 2rem;
+    }
+
+    .main-article {
+        grid-column: 1 / 4;
+    }
+
+    .main-article-p,
+    .main-article h1 {
+        padding: 0 3rem;
+    }
+    .recent-posts {
+        margin-bottom: 0;
+    }
+
+    .about-main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    .about-main-article {
+        grid-column: 1/ 4;
+        flex-direction: row;
+    }
+
+    .about-main-inner {
+        display: flex;
+        gap: 1.5em;
+        padding: 1em 2em;
+        align-items: center;
+    }
+}
+
+/* HOME PAGE */
+
+.main-article {
+    display: flex;
+    flex-direction: column;
+    color: #151515;
+}
+
+.main-article img {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.date {
+    font-size: .875rem;
+    line-height: 1.125rem;
+    font-weight: 400;
+}
+
+.title {
+    font-size: 2rem;
+    line-height: 2.125rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+span {
+    font-weight: 700;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.25em;
+}
+
+.home-post {
+    margin: 0 0 2rem 0;
+}
+
+/* ABOUT PAGE */
+
+.main-avatar {
+    width: 180px;
+    border-radius: 50%;
+}
+
+.about-main-article {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-title {
+    margin-bottom: 0;
+}
+
+.about-main-p {
+    margin-top: 2rem;
+}
